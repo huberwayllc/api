@@ -1,0 +1,45 @@
+{
+    "name": "huberwaycms/api",
+    "description": "API package for HuberwayCMS CMS",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "huberwaycms",
+        "huberwaycms cms",
+        "huberwaycms platform",
+        "huberwaycms api"
+    ],
+    "homepage": "https://huberway.com",
+    "authors": [
+        {
+            "name": "Huberway Technologies",
+            "email": "contact@huberway.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HuberwayCMS\\Api\\": "src"
+        }
+    },
+    "require": {
+
+    },
+    "require-dev": {
+        "laravel/pint": "^1.4.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HuberwayCMS\\Api\\Providers\\ApiServiceProvider"
+            ],
+            "aliases": {
+                "ApiHelper": "HuberwayCMS\\Api\\Facades\\ApiHelper"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
